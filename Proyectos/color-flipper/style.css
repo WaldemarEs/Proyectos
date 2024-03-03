@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 auto;
+  font-family: "Courier New", Courier, monospace;
+  color: #555;
+}
+
+header {
+  background-color: #ccc7c7;
+}
+/* Estilos de navbar*/
+nav div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+div ul {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+  text-align: center;
+}
+div ul li {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+h2 {
+  background-color: #0f0f0f;
+  padding: 7px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+h4 {
+  color: rgb(30, 33, 33);
+}
+a {
+  text-decoration: none;
+  color: #585555;
+}
+/* Estilos del main*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta la altura según tus necesidades */
+}
+/*Estilos Botón*/
+
+main div .container{
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+button{
+    padding: 5px;
+    background-color: #faf0f0;
+    margin-left: 40%;
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de HTML Semántico</title>
+</head>
+<body>
+
+    <!-- Introducción -->
+    <section>
+        <h1>Guía de HTML Semántico</h1>
+        <p>
+            El HTML semántico utiliza etiquetas para describir el significado y la estructura del contenido de una página web,
+            en lugar de solo su apariencia. Esto mejora la accesibilidad, la legibilidad y el SEO de la página.
+        </p>
+    </section>
+
+    <!-- Elementos semánticos comunes -->
+
+    <!-- 1. Cabecera y pie de página -->
+    <section>
+        <h2>1. Cabecera y pie de página</h2>
+        <article>
+            <code>&lt;header&gt;</code>: Contiene el encabezado principal de la página, como el logotipo, el nombre del sitio web y el menú de navegación.
+        </article>
+        <article>
+            <code>&lt;footer&gt;</code>: Contiene información de contacto, derechos de autor y otra información secundaria.
+        </article>
+        <article>
+            <!-- Ejemplo -->
+            <pre>
+                <code>
+                    &lt;header&gt;
+                      &lt;h1&gt;Mi sitio web&lt;/h1&gt;
+                      &lt;nav&gt;
+                        &lt;a href="#"&gt;Inicio&lt;/a&gt;
+                        &lt;a href="#"&gt;Acerca de&lt;/a&gt;
+                        &lt;a href="#"&gt;Contacto&lt;/a&gt;
+                      &lt;/nav&gt;
+                    &lt;/header&gt;
+
+                    &lt;main&gt;
+                      ... contenido principal ...
+                    &lt;/main&gt;
+
+                    &lt;footer&gt;
+                      &lt;p&gt;Copyright &copy; 2023 Mi sitio web&lt;/p&gt;
+                    &lt;/footer&gt;
+                </code>
+            </pre>
+        </article>
+    </section>
+
+    <!-- 2. Secciones y artículos -->
+    <section>
+        <h2>2. Secciones y artículos</h2>
+        <article>
+            <code>&lt;section&gt;</code>: Define una sección de contenido con un tema específico.
+        </article>
+        <article>
+            <code>&lt;article&gt;</code>: Define un artículo independiente, como una noticia o una entrada de blog.
+        </article>
+        <article>
+            <!-- Ejemplo -->
+            <pre>
+                <code>
+                    &lt;section id="noticias"&gt;
+                      &lt;h2&gt;Noticias recientes&lt;/h2&gt;
+                      &lt;article&gt;
+                        &lt;h3&gt;Nuevo producto lanzado&lt;/h3&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&lt;/p&gt;
+                      &lt;/article&gt;
+                      &lt;article&gt;
+                        &lt;h3&gt;Evento próximo&lt;/h3&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&lt;/p&gt;
+                      &lt;/article&gt;
+                    &lt;/section&gt;
+                </code>
+            </pre>
+        </article>
+    </section>
+
+    <!-- 3. Contenido aside -->
+    <section>
+        <h2>3. Contenido aside</h2>
+        <article>
+            <code>&lt;aside&gt;</code>: Contiene información relacionada con el contenido principal, pero no es esencial.
+        </article>
+        <article>
+            <!-- Ejemplo -->
+            <pre>
+                <code>
+                    &lt;main&gt;
+                      &lt;article&gt;
+                        &lt;h1&gt;Título del artículo&lt;/h1&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&lt;/p&gt;
+                      &lt;/article&gt;
+                      &lt;aside&gt;
+                        &lt;h2&gt;Más información&lt;/h2&gt;
+                        &lt;ul&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Enlace 1&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Enlace 2&lt;/a&gt;&lt;/li&gt;
+                          &lt;li&gt;&lt;a href="#"&gt;Enlace 3&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/aside&gt;
+                    &lt;/main&gt;
+                </code>
+            </pre>
+        </article>
+    </section>
+
+    <!-- 4. Elementos de navegación -->
+    <section>
+        <h2>4. Elementos de navegación</h2>
+        <article>
+            <code>&lt;nav&gt;</code>: Define un área de navegación, como un menú.
+        </article>
+        <article>
+            <code>&lt;a&gt;</code>: Define un enlace a otra página web o a una sección dentro de la misma página.
+        </article>
+        <article>
+            <!-- Ejemplo -->
+            <pre>
+                <code>
+                    &lt;header&gt;
+                      &lt;nav&gt;
+                        &lt;a href="#"&gt;Inicio&lt;/a&gt;
+                        &lt;a href="#"&gt;Acerca de&lt;/a&gt;
+                        &lt;a href="#"&gt;Contacto&lt;/a&gt;
+                      &lt;/nav&gt;
+                    &lt;/header&gt;
+                </code>
+            </pre>
+        </article>
+    </section>
+
+    <!-- 5. Elementos de contenido textual -->
+    <section>
+        <h2>5. Elementos de contenido textual</h2>
+        <article>
+            <code>&lt;h1&gt; a &lt;h6&gt;</code>: Definen encabezados de diferentes niveles.
+        </article>
+        <article>
+            <code>&lt;p&gt;</code>: Define un párrafo de texto.
+        </article>
+        <article>
+            <code>&lt;br&gt;</code>: Inserta un salto de línea.
+        </article>
+        <article>
+            <!-- Ejemplo -->
+            <pre>
+                <code>
+                    &lt;h1&gt;Título principal&lt;/h1&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna...&lt;/p&gt;
+
+                    &lt;h2&gt;Título secundario&lt;/h2&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna...&lt;/p&gt;
+                </code>
+            </pre>
+        </article>
+    </section>
+
+    <!-- 6. Elementos multimedia -->
+    <section>
+        <h2>6. Elementos multimedia</h2>
+                  <article>
+            <code>&lt;img&gt;</code>: Inserta una imagen.
+        </article>
+        <article>
+            <code>&lt;video&gt;</code>: Inserta un video.
+        </article>
+        <article>
+            <code>&lt;audio&gt;</code>: Inserta un audio.
+        </article>
+        <article>
+            <!-- Ejemplo -->
+            <pre>
+                <code>
+                    &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+
+                    &lt;video controls&gt;
+                      &lt;source src="video.mp4" type="video/mp4"&gt;
+                    &lt;/video&gt;
+
+                    &lt;audio controls&gt;
+                      &lt;source src="audio.mp3" type="audio/mp3"&gt;
+                    &lt;/audio&gt;
+                </code>
+            </pre>
+        </article>
+    </section>
+
+    <!-- 7. Otros elementos -->
+    <section>
+        <h2>7. Otros elementos</h2>
+        <article>
+            <code>&lt;ul&gt;</code>: Define una lista sin orden.
+        </article>
+        <article>
+            <code>&lt;ol&gt;</code>: Define una lista ordenada.
+        </article>
+        <article>
+            <code>&lt;li&gt;</code>: Define un elemento de lista.
+        </article>
+        <article>
+            <code>&lt;dl&gt;</code>: Define una lista de definición.
+        </article>
+        <article>
+            <code>&lt;dt&gt;</code>: Define un término en una lista de definición.
+        </article>
+        <article>
+            <code>&lt;dd&gt;</code>: Define la definición de un término en una lista de definición.
+        </article>
+        <article>
+            <!-- Ejemplo -->
+            <pre>
+                <code>
+                    &lt;ul&gt;
+                      &lt;li&gt;Elemento 1&lt;/li&gt;
+                      &lt;li&gt;Elemento 2&lt;/li&gt;
+                      &lt;li&gt;Elemento 3&lt;/li&gt;
+                    &lt;/ul&gt;
+
+                    &lt;ol&gt;
+                      &lt;li&gt;Paso 1&lt;/li&gt;
+                      &lt;li&gt;Paso 2&lt;/li&gt;
+                      &lt;li&gt;Paso 3&lt;/li&gt;
+                    &lt;/ol&gt;
+
+                    &lt;dl&gt;
+                      &lt;dt&gt;Termino 1&lt;/dt&gt;
+                      &lt;dd&gt;Definición del término 1&lt;/dd&gt;
+                      &lt;dt&gt;Termino 2&lt;/dt&gt;
+                      &lt;dd&gt;Definición del término 2&lt;/dd&gt;
+                    &lt;/dl&gt;
+                </code>
+            </pre>
+        </article>
+    </section>
+
+    <!-- 8. Atributos semánticos -->
+    <section>
+        <h2>8. Atributos semánticos</h2>
+        <article>
+            Además de los elementos semánticos, algunos elementos genéricos se pueden convertir en semánticos utilizando atributos específicos.
+        </article>
+        <article>
+            <code>id</code>: Identifica de forma única un elemento dentro de la página.
+        </article>
+        <article>
+            <code>class</code>: Permite agrupar elementos similares para aplicarles estilos CSS.
+        </article>
+        <article>
+            <code>lang</code>: Define el idioma del contenido de un elemento.
+        </article>
+        <article>
+            <code>role</code>: Define el papel de un elemento para las tecnologías de asistencia.
+        </article>
+        <article>
+            <!-- Ejemplo -->
+            <pre>
+                <code>
+                    &lt;figure&gt;
+                      &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+                      &lt;figcaption&gt;Pie de foto&lt;/figcaption&gt;
+                    &lt;/figure&gt;
+
+                    &lt;main role="main"&gt;
+                      ... contenido principal ...
+                    &lt;/main&gt;
+                </code>
+            </pre>
+        </article>
+    </section>
+
+    <!-- Beneficios del HTML semántico -->
+    <section>
+        <h2>Beneficios del HTML semántico</h2>
+        <ul>
+            <li><strong>Accesibilidad:</strong> Las tecnologías de asistencia, como los lectores de pantalla, pueden entender mejor el significado del contenido.</li>
+            <li><strong>SEO:</strong> Los motores de búsqueda pueden comprender mejor el contenido de la página y mejorar su ranking.</li>
+            <li><strong>Mantenimiento:</strong> El código es más organizado y fácil de mantener.</li>
+            <li><strong>Experiencia de usuario:</strong> La estructura clara del contenido mejora la experiencia del usuario.</li>
+        </ul>
+    </section>
+
+</body>
+</html>
+
+          
