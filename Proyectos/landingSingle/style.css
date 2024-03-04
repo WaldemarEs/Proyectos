@@ -111,7 +111,7 @@ a:hover {
   color: hsl(300, 69%, 71%);
 }
 /* media */
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   /*header estilos*/
 
   header {
